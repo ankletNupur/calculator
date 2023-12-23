@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Cost Calculator</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<header>
+    <a class="logo_error-maker">
+    <img src="image/error maker01.svg"
+     alt="Error" width="300px" class="logo_error"> </a>
+    
+    
+        </header>
+<body>
+    <video autoplay muted loop id="myVideo">
+    <source src="image/pexels-prakash-chavda-7198205 (1080p) (1).mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+   
+  </video>
+  <div>
+    <h1  class="NFTSIDELOGO">Minting Gas Fee Calculator</h1>
+  </div>
+  
+    <div class="calculator">
+        <h1  >NFT Cost Calculator</h1>
+        
+        <label for="blockchain">Select Blockchain:</label>
+        <select id="blockchain">
+            <option value="ethereum">Ethereum</option>
+            <option value="binance">Binance Smart Chain</option>
+            <!-- Add more blockchain options as needed -->
+        </select>
+
+        <label for="numberOfNFTs">Number of NFTs to Mint:</label>
+        <input type="number" id="numberOfNFTs" min="1" value="1">
+
+        <label for="metadataSize">Metadata Size (KB):</label>
+        <input type="number" id="metadataSize" min="0" value="0">
+
+        <label for="gasFee">Gas Fee (Gwei):</label>
+        <input type="number" id="gasFee" min="1" value="50">
+
+        <button onclick="calculateCost()"  >Calculate Cost</button>
+
+        <div id="result" class="result_search">
+            <!-- Result will be displayed here -->
+        </div>
+    </div>
+
+    <script src="new.js"></script>
+</body>
+<footer>
+    
+</footer>
+</html>
